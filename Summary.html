@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>landing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand bg-success text-white" href="Summary.html">Latitude</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Plots
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="maxtemp.html">Max Temperature</a></li>
+          <li><a href="humidity.html">Humidity</a></li>
+          <li><a href="windiness.html">Windiness</a></li>
+          <li><a href="cloudiness.html">Cloudiness</a></li>
+        </ul>
+      </li>
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="data.html">Data</a></li>
+    </ul>
+  </div>
+</nav>
+    <!-- Main Content Area -->
+    <div class="container-fluid">
+        <div class="row mt-3 ml-3 mr-3 mb-3">
+          <div class="col-lg-7" style="background-color: white;">
+            <div class="thumbnail">
+              <h1 class="text-center text-success pt-4">Summary: Latitude vs Weather</h1>
+              <hr>
+              <img class="img-responsive" src="Resources\assets\images\Globe.png" alt="Globe Art" style="width:30%">
+              <p>Latitude vs. X was built to analyze whether the location of a city and weather conditions are correlated.  Data was called from OpenWeather API and datasets from ~500 cities were collected.</p>
+              <br>
+              <P>After cleaning and sorting the city weather data, Matplotlib was used to create these visualizations.</P>
+              <br>
+              <p>For further analysis, please select from the Plot drop down in the top right or select a visualization</p>
+              <ul><b>
+                <li>Latitude vs Max Temperature</li>
+                <li>Latitude vs Humidity</li>
+                <li>Latitude vs Windiness</li>
+                <li>Latitude vs Cloudiness</li>
+              </b></ul>
+            </div>
+          </div>
+          <div class="col-lg-5" style="background-color: white;">
+            <div class="thumbnail">
+                <h1 class="text-center text-success pt-4">Visualizations</h1>
+                <hr>
+                <div class="row">
+                  <div class="col-md-6 col-sm">
+                    <a href="maxtemp.html" target="_blank">
+                    <img class="img-responsive" src="Resources\assets\images\Max.png" alt="Latitude vs Max Temperture" style="width:100%"></a>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="humidity.html" target="_blank">
+                    <img class="img-responsive" src="Resources\assets\images\Humid.png" alt="Latitude vs Humidity" style="width:100%"></a>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="windiness.html" target="_blank">
+                    <img class="img-responsive" src="Resources\assets\images\Wind.png" alt="Latitude vs Windiness" style="width:100%"></a>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="cloudiness.html" target="_blank">
+                    <img class="img-responsive" src="Resources\assets\images\Cloud.png" alt="Latitude vs Cloudiness" style="width:100%"></a>
+                  </div>
+                </div>
+            </div>
+          </div>  
+          <hr>
+        </div>
+      </div>
+</body>
+</html>
